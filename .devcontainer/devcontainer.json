@@ -1,0 +1,72 @@
+{
+  "image": "mcr.microsoft.com/devcontainers/python:1-3.11-bullseye",
+  "features": {
+    "ghcr.io/devcontainers-contrib/features/pipenv:2": {}
+  },
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "editor.minimap.enabled": false,
+        "editor.renderLineHighlight": "gutter",
+        "extensions.ignoreRecommendations": true,
+        "files.associations": {
+          ".env.*": "dotenv"
+        },
+        "files.eol": "\n",
+        "git.autofetch": true,
+        "git.confirmSync": false,
+        "material-icon-theme.activeIconPack": "nest",
+        "material-icon-theme.languages.associations": {
+          "dotenv": "tune"
+        },
+        "workbench.iconTheme": "material-icon-theme",
+        "[python]": {
+          "editor.codeActionsOnSave": [
+            "source.organizeImports",
+            "source.fixAll"
+          ],
+          "editor.rulers": [79],
+          "editor.defaultFormatter": "ms-python.python",
+          "editor.formatOnSave": true,
+          "editor.formatOnPaste": true,
+          "editor.insertSpaces": true,
+          "editor.tabSize": 4
+        },
+        "json.format.keepLines": true,
+        "[json]": {
+          "editor.codeActionsOnSave": {
+            "source.fixAll": true
+          },
+          "editor.defaultFormatter": "vscode.json-language-features",
+          "editor.formatOnSave": true,
+          "editor.formatOnPaste": true,
+          "editor.insertSpaces": false,
+          "editor.tabSize": 4,
+          "files.insertFinalNewline": true,
+          "files.trimFinalNewlines": true,
+          "files.trimTrailingWhitespace": true
+        },
+        "[jsonc]": {
+          "editor.codeActionsOnSave": {
+            "source.fixAll": true
+          },
+          "editor.defaultFormatter": "vscode.json-language-features",
+          "editor.formatOnSave": true,
+          "editor.formatOnPaste": true,
+          "editor.insertSpaces": false,
+          "editor.tabSize": 4,
+          "files.insertFinalNewline": true,
+          "files.trimFinalNewlines": true,
+          "files.trimTrailingWhitespace": true
+        }
+      },
+      "extensions": [
+        "PKief.material-icon-theme",
+        "EditorConfig.EditorConfig",
+        "mikestead.dotenv",
+        "eamodio.gitlens",
+        "ms-python.python",
+      ]
+    }
+  }
+}
